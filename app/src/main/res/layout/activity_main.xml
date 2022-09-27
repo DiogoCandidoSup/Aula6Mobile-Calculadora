@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:background="@color/light_pink">
+
+    <!-- TITULO ======================================================= -->
+    <TextView
+        android:id="@+id/txtTitulo"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+
+        android:text="CALCULADORA"
+        android:textSize="30sp" />
+
+    <!-- INPUT ======================================================= -->
+    <EditText
+        android:id="@+id/edValor1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/txtTitulo"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:hint="Valor 1: "
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edValor2"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/edValor1"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:hint="Valor 2: "
+        android:inputType="number"
+        android:maxLines="1"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btSomar"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edValor2"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:width="200dp"
+
+        android:backgroundTint="@color/pink"
+        android:padding="10dp"
+
+        android:text="Somar"
+
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btSubtrair"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btSomar"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:width="200dp"
+
+        android:backgroundTint="@color/pink"
+        android:padding="10dp"
+
+        android:text="Subtrair"
+
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btMultiplicar"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btSubtrair"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:width="200dp"
+
+        android:backgroundTint="@color/pink"
+        android:padding="10dp"
+
+        android:text="Multiplicar"
+
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btDividir"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btMultiplicar"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:width="200dp"
+
+        android:backgroundTint="@color/pink"
+        android:padding="10dp"
+
+        android:text="Dividir"
+
+        android:textColor="@color/black" />
+
+</RelativeLayout>
